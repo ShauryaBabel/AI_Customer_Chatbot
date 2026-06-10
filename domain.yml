@@ -1,0 +1,41 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - product_info
+  - delivery_time
+  - refund_policy
+  - complaint
+  - contact_support
+  - order_status
+
+responses:
+
+  utter_greet:
+    - text: "Hello! Welcome to customer support. How can I help you?"
+
+  utter_goodbye:
+    - text: "Thank you for contacting us. Have a nice day!"
+
+  utter_product_info:
+    - text: "We provide quality products with warranty and customer support."
+
+  utter_delivery_time:
+    - text: "Delivery usually takes 3 to 7 working days."
+
+  utter_refund_policy:
+    - text: "You can request a refund within 7 days of delivery."
+
+  utter_complaint:
+    - text: "Sorry for the inconvenience. Please share your order ID and issue."
+
+  utter_contact_support:
+    - text: "You can contact support at support@example.com or call 9876543210."
+
+  utter_order_status:
+    - text: "Please share your order ID. Our support team will check the status."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

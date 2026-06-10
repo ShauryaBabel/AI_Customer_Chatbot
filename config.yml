@@ -1,0 +1,36 @@
+version: "3.1"
+
+language: en
+
+pipeline:
+  # Converts text into words/tokens
+  - name: WhitespaceTokenizer
+
+  # Finds useful patterns in text
+  - name: RegexFeaturizer
+
+  # Creates basic text features
+  - name: LexicalSyntacticFeaturizer
+
+  # Converts text into numeric vectors
+  - name: CountVectorsFeaturizer
+
+  # Classifies user intent
+  - name: DIETClassifier
+    epochs: 100
+
+  # Handles unknown messages
+  - name: FallbackClassifier
+    threshold: 0.3
+
+policies:
+  # Handles fixed rules
+  - name: RulePolicy
+
+  # Remembers exact stories
+  - name: MemoizationPolicy
+
+  # Learns conversation flow
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100

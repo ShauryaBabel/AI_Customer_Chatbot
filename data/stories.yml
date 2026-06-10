@@ -1,0 +1,31 @@
+version: "3.1"
+
+stories:
+
+- story: customer asks product info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: product_info
+  - action: utter_product_info
+
+- story: customer asks refund
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: refund_policy
+  - action: utter_refund_policy
+
+- story: customer complaint
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: complaint
+  - action: utter_complaint
+
+- story: customer asks order status
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_status
+  - action: utter_order_status

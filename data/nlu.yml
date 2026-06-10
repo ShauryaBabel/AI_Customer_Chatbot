@@ -1,0 +1,69 @@
+version: "3.1"
+
+nlu:
+
+# Greeting intent
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+
+# Goodbye intent
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - thank you bye
+
+# Product information intent
+- intent: product_info
+  examples: |
+    - tell me about your product
+    - what products do you sell
+    - give me product details
+    - I want product information
+
+# Delivery time intent
+- intent: delivery_time
+  examples: |
+    - how many days for delivery
+    - when will I receive my order
+    - delivery time
+    - how long does shipping take
+
+# Refund policy intent
+- intent: refund_policy
+  examples: |
+    - what is your refund policy
+    - can I get a refund
+    - refund rules
+    - how to return product
+
+# Complaint intent
+- intent: complaint
+  examples: |
+    - I want to complain
+    - my product is damaged
+    - I received wrong item
+    - I am not happy with service
+
+# Contact support intent
+- intent: contact_support
+  examples: |
+    - contact customer care
+    - support phone number
+    - customer support email
+    - how can I contact support
+
+# Order status intent
+- intent: order_status
+  examples: |
+    - where is my order
+    - check my order status
+    - track my order
+    - my order is late
+    - order tracking

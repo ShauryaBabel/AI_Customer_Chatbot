@@ -1,0 +1,43 @@
+version: "3.1"
+
+rules:
+
+- rule: Say hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Product information
+  steps:
+  - intent: product_info
+  - action: utter_product_info
+
+- rule: Delivery time
+  steps:
+  - intent: delivery_time
+  - action: utter_delivery_time
+
+- rule: Refund policy
+  steps:
+  - intent: refund_policy
+  - action: utter_refund_policy
+
+- rule: Complaint handling
+  steps:
+  - intent: complaint
+  - action: utter_complaint
+
+- rule: Contact support
+  steps:
+  - intent: contact_support
+  - action: utter_contact_support
+
+- rule: Order status
+  steps:
+  - intent: order_status
+  - action: utter_order_status
